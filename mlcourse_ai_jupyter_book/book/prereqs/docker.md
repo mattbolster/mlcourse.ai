@@ -30,14 +30,14 @@ If you meet the following requirements, install [Docker for Windows](https://doc
  - At least 4GB of RAM.
 
 It's not the end of the world if you can't meet these requirements.
-You can still use [Docker Toolbox](https://docs.docker.com/toolbox/overview) which is a good official alternative and with fewer requirements with to the Windows version. There are slight differences between Docker and Docker Toolbox for the end-user, but you can safely use both for now.
+You can still use [Docker Toolbox](https://docs.docker.com/toolbox/overview), which is a good official alternative and with fewer requirements than the Windows version. There are slight differences between Docker and Docker Toolbox for the end-user, but you can safely use both for now.
 
 - When you run the installer, it may offer you to install git along. Mark a checkbox with this option if you don't have git on your system.
 - In the case of Docker Toolbox, you may or may not need to delete your existing Virtualbox installation.
 - Once the installation is complete, open docker (in case of docker toolbox open Docker CLI, it's called Docker Quickstart Terminal) and type: `> docker run hello-world`. It should run without errors.
 - Open a Command-line terminal and clone the course repo: `git clone https://github.com/Yorko/mlcourse.ai`
 - Warning for Docker Toolbox users: you must put your repo in your home dir, i.e. `C:\Users\%username%\mlcourse.ai`, otherwise the `run_docker_jupyter_windows.cmd` won't work. There is a workaround in case of a different location, but we don't assist with it.
-- Change to mlcourse.ai directory: `cd mlcourse.ai` and run `run_docker_jupyter_windows.cmd`. Take a note on the local address the notebook reports, and aim your browser to this address. In the case of Windows 10 and Hyper-V, it should just be `http://localhost:4545`. In the case of Docker Toolbox, it's different. We implemented the autostart of your default browser with the correct address, but beware, that it may not work in Internet Explorer or Edge (for unknown reason). Use Firefox or Chrome then.
+- Change to mlcourse.ai/docker_files directory: `cd mlcourse.ai/docker_files` and run `run_docker_jupyter_windows.cmd`. Take note of the local address the notebook reports, and aim your browser to this address. In the case of Windows 10 and Hyper-V, it should just be `http://localhost:4545`. In the case of Docker Toolbox, it's different. We implemented the autostart of your default browser with the correct address, but beware that it may not work in Internet Explorer or Edge (for unknown reason). Use Firefox or Chrome then.
 - In the browser, you should see the directory tree from your mlcourse.ai folder. Click on `docker_files`, open `check_docker.ipynb` and execute all cells to make sure all the libraries are installed and work fine.
 
 ### Docker tips
